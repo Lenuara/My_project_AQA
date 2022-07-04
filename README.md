@@ -7,10 +7,23 @@
 
 ###Структура проекта:  
 Папки:
-- locators
-- pages  
-- tests 
+- data  
+- generator  
+- locators  
+- pages    
+- tests   
 
-Файлы:
-- requirements.txt  - для всех импортов
-- conftest.py - для фикстур
+Файлы:  
+- data.py - декоратор для работы с данными  
+- generator.py - генератор данных модулем faker (ФИО, емайл, адрес)  
+- elements_page_locators.py 
+  - класс, собирающий входные и выходные данные для текстового поля  
+  -
+- elements_test.py 
+  - функция теста текстовых полей ввода  
+  - 
+- elements_page.py - функции заполнения и проверок полей  
+- base_page - типы проверок элементов, ожидание явное  
+- requirements.txt  - для всех импортов  
+- conftest.py - для фикстур  
+- 
